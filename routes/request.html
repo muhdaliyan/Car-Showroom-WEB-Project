@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Car Showroom</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Showroom/routes/request.html" class="btn">Request a Cars</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="request">
+        <div class="container">
+            <h2>Request a Car</h2> 
+            <form action="../api/request.php" method="post" enctype="multipart/form-data">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone No:</label><br>
+                <input type="text" id="phone" name="phone" required><br>
+    
+                <label for="car">Car Model:</label><br>
+                <input type="text" id="car" name="car" required><br>
+
+                <label for="car">Budget:</label><br>
+                <input type="text" id="budget" name="budget" required><br>
+
+                <label for="car">Car Pic:</label><br>
+                <input type="file" id="pic" name="pic" required><br>
+    
+                <button>Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@carshowroom.com | Phone: (123) 456-7890</p>
+    </section>
+
+    
+</body>
+</html>
