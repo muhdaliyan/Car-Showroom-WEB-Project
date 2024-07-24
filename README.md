@@ -28,6 +28,7 @@ The Car Showroom Web Project is designed to create a web-based platform for a ca
   - HTML5
   - CSS
   - JavaScript
+  - PHP
 
 - **Backend:**
    -
